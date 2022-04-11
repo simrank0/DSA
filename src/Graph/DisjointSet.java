@@ -1,4 +1,4 @@
-package graph;
+package Graph;
 
 public class DisjointSet {
     int[] parent = new int[100001];
