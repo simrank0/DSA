@@ -1,17 +1,15 @@
 package DP;
 
-import java.util.Arrays;
-
 /**
  * https://leetcode.com/problems/coin-change-2/
  * Unbounded Knapsack Problem
  */
-public class CoinChange {
+public class CoinChange2 {
     public static void main(String[] args) {
         int[] coins = {1, 2, 3};
         int target = 5;
-        CoinChange coinChange = new CoinChange();
-        System.out.println(coinChange.change(target, coins));
+        CoinChange2 coinChange2 = new CoinChange2();
+        System.out.println(coinChange2.change(target, coins));
     }
     public int change(int amount, int[] coins) {
 
