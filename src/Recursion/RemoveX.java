@@ -2,6 +2,10 @@ package Recursion;
 
 import java.util.Scanner;
 
+/**
+ * Question: Remove all occurrences of 'x' character in a string. Consider string to be in lowercase.
+ * Example: simxxrxxxxanx -> simran
+ */
 public class RemoveX {
 
     private String removeX(String str) {
