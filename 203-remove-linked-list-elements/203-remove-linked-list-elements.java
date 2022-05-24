@@ -12,15 +12,7 @@ class Solution {
     ListNode ans = new ListNode(), ANS = ans;
     public ListNode removeElements(ListNode head, int val) {
         if(head == null) return head;
-        removeElementsHelper(head, val);
-        return ANS.next;
-    }
-    public void removeElementsHelper(ListNode node, int val) {
-        if(node == null) return;
-        if(node.val != val) {
-            ans.next = new ListNode(node.val);
-            ans = ans.next;
-        }
-        removeElementsHelper(node.next, val);
+        head.next = removeElements(head.next, val);
+        return head.val == val ? head.next : head;
     }
 }
